@@ -1,0 +1,25 @@
+.product-body{
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding:20px;
+  overflow-y: scroll;
+}
+.product-text{
+    width: 100%;
+}
+.product-text p {
+    text-align: center;
+    font-size: 3rem;
+    margin: 0;
+    padding: 5px;
+}
+.products{
+  width: 100%;
+}
+.social{
+  width:100%;
+}
+ 

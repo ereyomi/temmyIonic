@@ -1,0 +1,35 @@
+<div class="signin">
+  
+  <div class="form-div">
+
+    <div class="signin-logo-div">
+      <div class="the-logo">
+        <img src="assets/icon/bincom.png" alt="" srcset="">
+      </div>
+    </div>
+
+    <form (ngSubmit)="submitAction()" [formGroup]="signInForm" [ngClass]="{'Inputerror' : inputerror}" class="signinform">
+      
+      <input 
+      type="email" 
+      name= "" 
+      id="" 
+      placeholder="Email address" 
+      formControlName="signInEmail"
+      />
+      <input type="text" 
+      name="" 
+      id="" 
+      placeholder="password" 
+      formControlName="signInPassword" 
+      />
+      <!-- <button type="submit" [disabled]="!signInForm.valid">SIGN IN</button> -->
+      <button type="submit" [disabled]="!signInForm.valid" [ngStyle]="{background: !signInForm.valid ? 'rgb(161, 221, 205)' : '#1F9474'}">SIGN IN</button>
+      
+    </form>
+  </div>  
+  
+</div>  
+<!-- <ion-card (swipe)="handleSwipe($event)">
+  <ion-card-content>swipe</ion-card-content>
+</ion-card> -->

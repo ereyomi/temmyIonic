@@ -1,3 +1,9 @@
 <ion-app>
-  <ion-router-outlet></ion-router-outlet>
+  
+    <ion-content [fullscreen]="true" fixed>
+        <ion-router-outlet></ion-router-outlet>        
+     </ion-content> 
+
+  <!--  [@routeAnimations]="prepareRoute(outlet)"  #outlet="outlet"-->
+   
 </ion-app>

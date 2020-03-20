@@ -1,0 +1,31 @@
+<div class="product-body" 
+(swipeleft)="handleSwipeLeft($event)" 
+(swiperight)="handleSwipeRight($event)"> 
+
+  <div class="product-text">
+    <p>Brand</p>
+  </div>
+
+  <div class="products">
+   <app-product (click)="showSocial(product.id)" [productData]="product"></app-product>
+  </div>
+
+  <!-- <div class="product-cards" *ngIf="products">
+    <div class="card" *ngFor="let product of products">
+      <div class="card-img">
+        <img [src]="product.icon" alt="">
+      </div>
+      <div class="card-text" (click)="showSocial(product.id)">
+        <p>{{ product.name }}</p>
+      </div>
+    </div>
+  </div> -->  
+</div>
+
+<div class="social">
+  <app-socialmedia-page [passedInData]="product"></app-socialmedia-page>
+</div>
+
+<!-- <ion-card (swipeleft)="handleSwipe($event)" (swiperight)="handleSwipe($event)">
+  <ion-card-content>swipe</ion-card-content>
+</ion-card> -->

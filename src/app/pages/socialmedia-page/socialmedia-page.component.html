@@ -1,0 +1,23 @@
+<div class="socialBody" *ngIf="modalState && passedInData">
+
+
+  <div [ngClass]="{'overlay-style': modalState}" (click)="closeSocial()"></div>
+
+
+  <div class="social-icon-box">
+    <!-- <div *ngFor="let brand of product_links[0].channels | keyvalue">
+      {{ brand.key }} -- {{ brand.value }}
+    </div> -->
+    <p class="brand-name"> {{ passedInData.name }}</p>
+    <div class="social-icon">
+      <fa-icon [icon]="facebook" *ngIf="passedInData.channels.facebook" (click)="redirectMe(passedInData.channels.facebook)"></fa-icon>
+      <fa-icon [icon]="twitter" *ngIf="passedInData.channels.twitter" (click)="redirectMe(passedInData.channels.twitter)"></fa-icon>
+      <fa-icon [icon]="instagram" *ngIf="passedInData.channels.instagram" (click)="redirectMe(passedInData.channels.instagram)"></fa-icon>
+      <fa-icon [icon]="linkedin" *ngIf="passedInData.channels.linkedin" (click)="redirectMe(passedInData.channels.linkedin)"></fa-icon>
+      <fa-icon [icon]="telegram" *ngIf="passedInData.channels.telegram" (click)="redirectMe(passedInData.channels.telegram)"></fa-icon>
+      <fa-icon [icon]="youtube" *ngIf="passedInData.channels.youtube" (click)="redirectMe(passedInData.channels.youtube)"></fa-icon>
+      <fa-icon [icon]="blog" *ngIf="passedInData.channels.blog" (click)="redirectMe(passedInData.channels.blog)"></fa-icon>
+      <fa-icon [icon]="website" *ngIf="passedInData.channels.website" (click)="redirectMe(passedInData.channels.website)"></fa-icon>
+    </div>  
+  </div>
+</div>

@@ -1,0 +1,65 @@
+
+.signin, .form-div{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.signin{
+    overflow: hidden;
+}
+.form-div form{
+    width: 80%;
+    height: auto;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.signin-logo-div{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.the-logo{
+    width: 40%;
+}
+.the-logo img{
+    width:100%;
+}
+
+.signinform input{
+    width: 100%;
+    border: none;
+    border: 1px solid #1F9474;
+    border-radius: 8px;
+    padding: 15px;
+    margin: 10px 0px;
+}
+.Inputerror input{
+    border: 1px solid red;
+}
+/* *:focus {
+    outline: none !important;
+ } */
+.signinform input:focus,*:focus {
+    outline: none;
+}
+button {
+    width: 40%;
+    border: none;
+    background:  #1F9474;
+    color: white;
+    border-radius: 15px;
+    padding: 15px 12px;
+    outline:none !important;
+}
+::placeholder{
+    color: rgb(187, 216, 208);
+}
